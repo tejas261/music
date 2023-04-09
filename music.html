@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="music.css">
+    <script src="https://kit.fontawesome.com/8dff7b5f04.js" crossorigin="anonymous"></script>
+    <title>Music Player</title>
+</head>
+<body>
+    <div class="container">
+        <div class="musicplayer">
+            <nav>
+                <div class="circle">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </div>
+
+                <div class="circle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+
+            <img src="singer.png" class="songimg">
+
+            <h1>Nan paadig naan idde</h1><br>
+            <p>Chandan Shetty, Rahul Ditto, All OK</p><br>
+
+           <audio id="song">
+                <source src="nnp_song1.mp3" type="audio/mpeg">
+           </audio>
+
+           <input type="range" value="0" id="progress">
+
+           <div class="controls">
+            <button><i class="fas fa-regular fa-backward"></i></button>
+            <button onclick="playPause()"><i  id="play" class="fas fa-regular fa-pause"></i></button>
+            <button><i class="fas fa-regular fa-forward"></i></button>
+           </div>
+        </div>
+    </div>
+
+<script src="music.js"></script> 
+</body>
+</html>
